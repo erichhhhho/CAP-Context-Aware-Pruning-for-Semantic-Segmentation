@@ -2,7 +2,7 @@
 
 [![996.ICU](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu) ![GitHub](https://img.shields.io/github/license/erichhhhho/CAP-Context-Aware-Pruning-for-Semantic-Segmentation.svg) ![](https://img.shields.io/badge/dynamic/json?color=000000&label=GitHub&query=%24.data.totalSubs&suffix=followers&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3Derichhhhho)
 
-The official repository for paper ''CAP: Context-Aware Pruning for Semantic Segmentation" <br/> by [Wei He](https://github.com/erichhhhho), Meiqing Wu, [Mingfu Liang](https://wuyujack.github.io/), [Siew-Kei Lam](https://siewkeilam.github.io/ei-research-group/contact.html). School of Computer Science and Engineering, Nanyang Technological University.
+The official repository for paper ''CAP: Context-Aware Pruning for Semantic Segmentation" by [Wei He](https://github.com/erichhhhho), Meiqing Wu, [Mingfu Liang](https://wuyujack.github.io/), [Siew-Kei Lam](https://siewkeilam.github.io/ei-research-group/contact.html). School of Computer Science and Engineering, Nanyang Technological University.
 [[paper]](https://openaccess.thecvf.com/content/WACV2021/papers/He_CAP_Context-Aware_Pruning_for_Semantic_Segmentation_WACV_2021_paper.pdf)
 
 ## Abstract
