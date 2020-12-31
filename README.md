@@ -1,6 +1,31 @@
 # CAP-Context-Aware-Pruning-for-Semantic-Segmentation
 
-The official repository for paper ''CAP: Context-Aware Pruning for Semantic Segmentation" [paper](https://openaccess.thecvf.com/content/WACV2021/papers/He_CAP_Context-Aware_Pruning_for_Semantic_Segmentation_WACV_2021_paper.pdf)
+The official repository for paper ''CAP: Context-Aware Pruning for Semantic Segmentation" by Wei He, Meiqing Wu, Mingfu Liang, Siew-Kei Lam. Nanyang Technological University
+[[paper]](https://openaccess.thecvf.com/content/WACV2021/papers/He_CAP_Context-Aware_Pruning_for_Semantic_Segmentation_WACV_2021_paper.pdf)
+
+## Abstract
+Network pruning for deep convolutional neural networks (CNNs) has recently achieved notable research progress on image-level classification. However, most existing pruning methods are not catered to or evaluated on semantic segmentation networks. In this paper, we advocate the importance of contextual information during channel pruning for semantic segmentation networks by presenting a novel Context-aware Pruning framework. Concretely, we formulate the embedded contextual information by leveraging the layer-wise channels interdependency via the Context-aware Guiding Module (CAGM) and introduce the Context-aware Guided Sparsification (CAGS) to adaptively identify the informative channels on the cumbersome model by inducing channel-wise sparsity on the scaling factors in batch normalization (BN) layers. The resulting pruned models require significantly lesser operations for inference while maintaining comparable performance to (at times outperforming) the original models. We evaluated our framework on widely-used benchmarks and showed its effectiveness on both large and lightweight models. On Cityscapes dataset, our framework reduces the number of parameters by 32%, 47%, 54%, and 63%, on PSPNet101, PSPNet50, ICNet, and SegNet, respectively, while preserving the performance.
+
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" width = "630" height = "340"
+    src="https://github.com/erichhhhho/CAP-Context-Aware-Pruning-for-Semantic-Segmentation/blob/main/CAG(Base).png">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">Basic CAGM</div>
+</center>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" width = "630" height = "340"
+    src="https://github.com/erichhhhho/CAP-Context-Aware-Pruning-for-Semantic-Segmentation/blob/main/CAG(PPM).png">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">CAGMs in Pyramid Pooling Module</div>
+</center>
 
 
 Results Overviews on Cityscapes:
@@ -43,3 +68,15 @@ Results Overviews on Camvid:
 | **SegNet-Ours-30%**      |      56.37     |  **6.03(79.52%&darr;)** | **30.01(71.88%&darr;)**  |
 
 
+## Citation
+If you find this project is useful for your research, please cite:
+```
+@InProceedings{He_2021_WACV,
+    author    = {He, Wei and Wu, Meiqing and Liang, Mingfu and Lam, Siew-Kei},
+    title     = {CAP: Context-Aware Pruning for Semantic Segmentation},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {January},
+    year      = {2021},
+    pages     = {960-969}
+}
+```
